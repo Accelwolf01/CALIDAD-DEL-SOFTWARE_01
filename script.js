@@ -130,6 +130,7 @@ nextButton.addEventListener('click', () => {
 
 document.getElementById('evaluation-form').addEventListener('submit', function(event) {
     event.preventDefault();
+    const nombre = document.getElementById('nombre').value;
     const funcionalidad = parseFloat(document.getElementById('funcionalidad').value);
     const usabilidad = parseFloat(document.getElementById('usabilidad').value);
     const mantenibilidad = parseFloat(document.getElementById('mantenibilidad').value);
@@ -139,8 +140,35 @@ document.getElementById('evaluation-form').addEventListener('submit', function(e
     const total = funcionalidad + usabilidad + mantenibilidad + eficiencia + portabilidad;
     const average = total / 5;
 
-    document.getElementById('result').innerText = `Puntaje total: ${total.toFixed(2)} / 25. Puntaje promedio: ${average.toFixed(2)} / 5.`;
-    saveEvaluation(total, 25);
+    const resultText = `Nombre: ${nombre}. Puntaje total: ${total.toFixed(2)} / 25. Puntaje promedio: ${average.toFixed(2)} / 5.`;
+    document.getElementById('result').innerText = resultText;
+
+    // Guardar en archivo de texto (simulado con localStorage, pero en realidad se guardaría en un archivo)
+    const evaluationData = {
+        nombre: nombre,
+        funcionalidad: funcionalidad,
+        usabilidad: usabilidad,
+        mantenibilidad: mantenibilidad,
+        eficiencia: eficiencia,
+        portabilidad: portabilidad,
+        total: total,
+        average: average,
+        timestamp: new Date().toISOString()
+    };
+
+    // Usar localStorage para simular, pero para archivo real necesitaríamos backend
+    let evaluations = JSON.parse(localStorage.getItem('evaluations')) || [];
+    evaluations.push(evaluationData);
+    localStorage.setItem('evaluations', JSON.stringify(evaluations));
+
+    // Opcional: Descargar como archivo JSON
+    const dataStr = JSON.stringify(evaluationData, null, 2);
+    const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+    const exportFileDefaultName = 'evaluacion.json';
+    const linkElement = document.createElement('a');
+    linkElement.setAttribute('href', dataUri);
+    linkElement.setAttribute('download', exportFileDefaultName);
+    linkElement.click();
 });
 
 function saveEvaluation(score, max) {

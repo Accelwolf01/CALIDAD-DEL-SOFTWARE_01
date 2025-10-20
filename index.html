@@ -102,6 +102,8 @@
             <h3>Modelo de Evaluación</h3>
             <p>Basado en métricas de calidad de software (ISO 25010), evaluamos el quiz con puntajes de 0 a 5 en cada aspecto, cuantificando el rendimiento general.</p>
             <form id="evaluation-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required><br>
                 <label for="funcionalidad">Funcionalidad (0-5):</label>
                 <input type="number" id="funcionalidad" min="0" max="5" value="4" required><br>
                 <label for="usabilidad">Usabilidad (0-5):</label>
@@ -112,7 +114,7 @@
                 <input type="number" id="eficiencia" min="0" max="5" value="4" required><br>
                 <label for="portabilidad">Portabilidad (0-5):</label>
                 <input type="number" id="portabilidad" min="0" max="5" value="5" required><br>
-                <button type="submit">Calcular Puntaje</button>
+                <button type="submit">Calcular Puntaje y Guardar</button>
             </form>
             <div id="result"></div>
             <p>Resultados de evaluación del quiz: Puntaje total: 20 / 25. Puntaje promedio: 4 / 5.</p>
