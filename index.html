@@ -3,65 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calidad de Software</title>
+    <title>Calidad de Software - Empresa XYZ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Calidad de Software</h1>
-        <nav>
-            <ul>
-                <li><a href="#normas">Normas</a></li>
-                <li><a href="#modelos">Modelos</a></li>
-                <li><a href="#estandares">Estándares</a></li>
-                <li><a href="#codigo">Código y Programación</a></li>
-                <li><a href="#pruebas">Pruebas y Evaluación</a></li>
-                <li><a href="#conclusiones">Conclusiones</a></li>
-                <li><a href="#recomendaciones">Recomendaciones</a></li>
-                <li><a href="#video-general">Video General</a></li>
-                <li><a href="#quiz">Quiz</a></li>
-                <li><a href="#evaluacion">Evaluación</a></li>
-            </ul>
-        </nav>
+        <h1>Calidad de Software - Empresa XYZ</h1>
+        <p>Especialistas en Desarrollo de Software de Alta Calidad</p>
     </header>
+    <section id="video-central">
+        <h2>Introducción a la Calidad de Software</h2>
+        <div class="video-placeholder">
+            <p>Video explicativo general sobre Calidad de Software (hasta 5 min)</p>
+            <!-- Reemplazar con embed de YouTube -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <nav>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="normas">Normas</button>
+            <button class="tab-button" data-tab="modelos">Modelos</button>
+            <button class="tab-button" data-tab="estandares">Estándares</button>
+            <button class="tab-button" data-tab="codigo">Código y Programación</button>
+            <button class="tab-button" data-tab="pruebas">Pruebas y Evaluación</button>
+            <button class="tab-button" data-tab="conclusiones">Conclusiones</button>
+            <button class="tab-button" data-tab="recomendaciones">Recomendaciones</button>
+            <button class="tab-button" data-tab="quiz">Quiz</button>
+            <button class="tab-button" data-tab="evaluacion">Evaluación</button>
+        </div>
+    </nav>
     <main>
-        <section id="normas">
+        <div id="normas" class="tab-content active">
             <h2>Normas</h2>
-            <p>Las normas en la calidad de software son estándares establecidos que guían el desarrollo y mantenimiento de software. Incluyen regulaciones como ISO/IEC 25010, que definen criterios para evaluar la calidad. Estas normas aseguran que el software cumpla con requisitos legales, éticos y técnicos, facilitando la interoperabilidad y la confianza en los productos. En entornos educativos, ayudan a formar estudiantes en prácticas profesionales, mientras que en proyectos reales reducen riesgos y costos asociados a fallos.</p>
-        </section>
-        <section id="modelos">
+            <p>Las normas en la calidad de software representan un conjunto de estándares internacionales y regulaciones que establecen criterios objetivos para el desarrollo, mantenimiento y evaluación de productos de software. Organizaciones como la ISO (International Organization for Standardization) y la IEC (International Electrotechnical Commission) han desarrollado normas clave, tales como ISO/IEC 25010, que define ocho características principales de calidad: funcionalidad, usabilidad, confiabilidad, eficiencia, mantenibilidad, portabilidad, seguridad y compatibilidad.</p>
+            <p>Estas normas no solo garantizan el cumplimiento de requisitos legales y éticos, sino que también promueven la interoperabilidad entre sistemas, reduciendo riesgos de fallos y aumentando la confianza de los usuarios finales. En entornos educativos, las normas sirven como base para formar a estudiantes en metodologías profesionales, enseñándoles la importancia de adherirse a estándares globales para preparar proyectos reales. En el ámbito empresarial, la implementación de normas reduce costos asociados a correcciones posteriores, mejora la competitividad en mercados globales y facilita la certificación de productos, lo que es crucial para contratos gubernamentales o sectores regulados como salud y finanzas.</p>
+            <p>Además, las normas fomentan una cultura de mejora continua, donde el software no solo cumple con especificaciones básicas, sino que supera expectativas en términos de calidad y sostenibilidad. Empresas líderes en tecnología, como Google o Microsoft, integran estas normas en sus procesos de desarrollo para asegurar productos robustos y escalables.</p>
+        </div>
+        <div id="modelos" class="tab-content">
             <h2>Modelos</h2>
-            <p>Los modelos de calidad, como el modelo de calidad de McCall o ISO 9126, proporcionan marcos para medir y mejorar la calidad del software en aspectos como funcionalidad, usabilidad y mantenibilidad. Estos modelos permiten cuantificar la calidad a través de métricas, identificando áreas de mejora. En educación, sirven para enseñar conceptos de evaluación sistemática, y en la industria, optimizan procesos de desarrollo para entregar software robusto y eficiente.</p>
-        </section>
-        <section id="estandares">
+            <p>Los modelos de calidad de software ofrecen marcos estructurados para medir, analizar y mejorar la calidad a lo largo del ciclo de vida del desarrollo. Entre los más destacados se encuentra el Modelo de Calidad de McCall (1977), que clasifica la calidad en factores como corrección, fiabilidad, eficiencia, integridad, usabilidad, mantenibilidad, flexibilidad, testabilidad, portabilidad, reusabilidad y interoperabilidad. Otro modelo fundamental es ISO 9126, precursor de ISO 25010, que evalúa la calidad en seis dimensiones: funcionalidad, fiabilidad, usabilidad, eficiencia, mantenibilidad y portabilidad.</p>
+            <p>Estos modelos permiten cuantificar la calidad mediante métricas objetivas, facilitando la identificación de áreas de mejora y la toma de decisiones informadas. En contextos educativos, los modelos sirven como herramientas pedagógicas para enseñar evaluación sistemática, permitiendo a estudiantes simular escenarios reales y comprender el impacto de decisiones de diseño en la calidad final. En proyectos empresariales, los modelos optimizan procesos de desarrollo, reduciendo tiempos de entrega y costos de mantenimiento, al priorizar características críticas y mitigar riesgos.</p>
+            <p>La aplicación de modelos como CMMI (Capability Maturity Model Integration) integra estos conceptos en niveles de madurez organizacional, desde procesos caóticos hasta optimizados, impulsando la innovación y la excelencia operativa en empresas de software.</p>
+        </div>
+        <div id="estandares" class="tab-content">
             <h2>Estándares</h2>
-            <p>Los estándares incluyen prácticas como CMMI o Agile, que promueven procesos consistentes y eficientes en el desarrollo de software, asegurando productos de alta calidad. CMMI se enfoca en la madurez de procesos, mientras que Agile enfatiza la adaptabilidad y colaboración. Beneficios incluyen mayor productividad, reducción de errores y mejor respuesta a cambios, aplicables tanto en aulas como en empresas.</p>
-        </section>
-        <section id="codigo">
+            <p>Los estándares en calidad de software incluyen metodologías y prácticas que promueven procesos consistentes, eficientes y adaptables en el desarrollo de software. El CMMI (Capability Maturity Model Integration) de la SEI (Software Engineering Institute) define niveles de madurez para procesos, desde inicial hasta optimizado, enfocándose en áreas como gestión de proyectos, ingeniería de software y soporte. Por otro lado, metodologías ágiles como Scrum o Kanban enfatizan la colaboración, la iteración rápida y la respuesta a cambios, priorizando el valor del cliente sobre la documentación rígida.</p>
+            <p>Estos estándares ofrecen beneficios significativos, incluyendo mayor productividad, reducción de errores y mejora en la capacidad de respuesta a requisitos cambiantes. En entornos educativos, los estándares proporcionan marcos para cursos prácticos, enseñando a estudiantes cómo aplicar metodologías en proyectos simulados, preparando así para transiciones fluidas a entornos profesionales. En el sector empresarial, la adopción de estándares como ISO 9001 o certificaciones ágiles acelera la entrega de productos, mejora la satisfacción del cliente y facilita la escalabilidad de equipos.</p>
+            <p>Empresas como Amazon o Spotify han integrado estándares ágiles para innovar rápidamente, demostrando cómo estos enfoques no solo mejoran la calidad, sino que también impulsan el crecimiento sostenible en mercados competitivos.</p>
+        </div>
+        <div id="codigo" class="tab-content">
             <h2>Código y Programación</h2>
-            <p>Buenas prácticas de codificación, como el uso de patrones de diseño, revisiones de código y herramientas de linting, mejoran la legibilidad, mantenibilidad y reducción de errores. El código limpio facilita la colaboración y futuras modificaciones. En contextos educativos, fomenta el aprendizaje de técnicas profesionales; en reales, acelera el desarrollo y minimiza bugs, aumentando la longevidad del software.</p>
-        </section>
-        <section id="pruebas">
+            <p>La calidad en el código y la programación se basa en prácticas que aseguran legibilidad, mantenibilidad, eficiencia y reducción de errores. El uso de patrones de diseño, como Singleton, Factory o Observer, permite soluciones reutilizables y escalables. Revisiones de código (code reviews) por pares identifican defectos tempranos, mientras que herramientas de linting y análisis estático, como ESLint para JavaScript o SonarQube, automatizan la detección de problemas comunes.</p>
+            <p>El código limpio, según principios como los de Robert C. Martin ("Clean Code"), facilita la colaboración entre desarrolladores, reduce la deuda técnica y acelera futuras modificaciones. En educación, estas prácticas fomentan el aprendizaje de técnicas profesionales, enseñando a estudiantes a escribir código que no solo funcione, sino que sea sostenible a largo plazo. En proyectos reales, un código de alta calidad minimiza bugs, acelera el desarrollo y aumenta la longevidad del software, contribuyendo a la rentabilidad y la innovación.</p>
+            <p>Frameworks como React o Angular incorporan estas prácticas, permitiendo a empresas construir aplicaciones robustas que soportan millones de usuarios, como en el caso de plataformas de e-commerce o redes sociales.</p>
+        </div>
+        <div id="pruebas" class="tab-content">
             <h2>Pruebas y Evaluación</h2>
-            <p>Las pruebas incluyen unitarias, de integración y de aceptación, evaluando el software para asegurar que cumple con los requisitos y es libre de defectos. Herramientas como JUnit o Selenium automatizan este proceso. En educación, enseñan metodologías de verificación; en proyectos reales, previenen fallos costosos y garantizan fiabilidad, mejorando la satisfacción del usuario.</p>
-        </section>
-        <section id="conclusiones">
+            <p>Las pruebas y evaluación constituyen fases críticas para asegurar que el software cumpla con requisitos y sea libre de defectos. Incluyen pruebas unitarias (para componentes individuales), de integración (para interacciones entre módulos), de sistema (para el producto completo) y de aceptación (para validar con usuarios finales). Herramientas como JUnit, Selenium para automatización web, y JMeter para rendimiento, facilitan procesos eficientes.</p>
+            <p>En educación, estas metodologías enseñan verificación sistemática, preparando a estudiantes para roles en QA (Quality Assurance). En entornos empresariales, las pruebas previenen fallos costosos, garantizan fiabilidad y mejoran la satisfacción del usuario, siendo esenciales en sectores críticos como banca o aviación. La evaluación continua mediante métricas como cobertura de código o defectos por línea, impulsa mejoras iterativas.</p>
+            <p>Empresas como Netflix utilizan pruebas automatizadas para despliegues continuos, asegurando alta disponibilidad y calidad en servicios globales.</p>
+        </div>
+        <div id="conclusiones" class="tab-content">
             <h2>Conclusiones</h2>
-            <p>La calidad de software es esencial para el éxito de proyectos en entornos educativos y reales, proporcionando beneficios como reducción de costos, mayor satisfacción del usuario y sostenibilidad a largo plazo. Adoptar normas, modelos y estándares no solo mejora el producto final, sino que también cultiva una cultura de excelencia. En educación, prepara a futuros profesionales; en la industria, impulsa innovación y competitividad.</p>
-        </section>
-        <section id="recomendaciones">
+            <p>La calidad de software emerge como pilar fundamental para el éxito sostenible en proyectos educativos y empresariales. Al integrar normas, modelos, estándares, prácticas de codificación y rigurosas pruebas, se logran productos que no solo cumplen expectativas técnicas, sino que también generan valor económico y social. Los beneficios incluyen reducción significativa de costos de mantenimiento, aumento en la satisfacción del usuario y fortalecimiento de la competitividad en mercados globales.</p>
+            <p>En entornos educativos, estos principios preparan a la próxima generación de profesionales, fomentando una mentalidad de excelencia desde el inicio. En el ámbito real, empresas que priorizan la calidad logran innovación acelerada, menor riesgo de fallos y mayor fidelización de clientes. Adoptar una cultura de calidad no es opcional; es imperativo para sobrevivir en la era digital.</p>
+            <p>En resumen, la calidad de software trasciende el código: es una estrategia integral que impulsa el progreso y la sostenibilidad en todos los niveles.</p>
+        </div>
+        <div id="recomendaciones" class="tab-content">
             <h2>Recomendaciones</h2>
-            <p>Recomendamos adoptar prácticas de calidad desde el inicio, capacitar al equipo y utilizar herramientas automatizadas para mantener altos estándares. Implementar revisiones regulares, métricas continuas y formación en calidad. En entornos educativos, integrar estos conceptos en currículos; en reales, invertir en auditorías y certificaciones para asegurar cumplimiento y mejora continua.</p>
-        </section>
-        <section id="video-general">
-            <h2>Video General (5 minutos)</h2>
-            <div class="video-placeholder">
-                <p>Video explicativo general sobre Calidad de Software (hasta 5 min)</p>
-                <!-- Reemplazar con embed de YouTube -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section id="quiz">
+            <p>Para maximizar la calidad de software, recomendamos adoptar prácticas desde las fases iniciales del proyecto. Capacite equipos en normas ISO y modelos de calidad, implemente revisiones de código regulares y utilice herramientas automatizadas para pruebas y análisis. Establezca métricas continuas para monitorear progreso y fomentar una cultura de mejora continua.</p>
+            <p>En educación, integre estos conceptos en currículos mediante proyectos prácticos y colaboraciones con empresas. En entornos reales, invierta en auditorías periódicas, certificaciones y formación especializada. Priorice la integración de estándares ágiles para adaptabilidad y la adopción de DevOps para ciclos de entrega rápidos y confiables.</p>
+            <p>Finalmente, mida el impacto: evalúe ROI (retorno de inversión) en calidad para justificar recursos y demostrar valor a stakeholders. Empresas líderes recomiendan comenzar con evaluaciones piloto para escalar gradualmente.</p>
+        </div>
+        <div id="quiz" class="tab-content">
             <h2>Quiz Final</h2>
             <div id="quiz-container">
                 <div id="question-container">
@@ -81,13 +95,12 @@
                 <h3>Resultados</h3>
                 <p id="score">Tu puntaje: </p>
             </div>
-        </section>
-        <section id="evaluacion">
+        </div>
+        <div id="evaluacion" class="tab-content">
             <h2>Evaluación</h2>
-            <p>Evaluamos un aplicativo educativo: un quiz sobre calidad de software.</p>
-            <a href="quiz.html" target="_blank">Acceder al Quiz</a>
+            <p>Evaluamos un aplicativo educativo: un quiz sobre calidad de software, desarrollado con estándares empresariales.</p>
             <h3>Modelo de Evaluación</h3>
-            <p>Basado en métricas de calidad de software (ISO 25010), evaluamos el quiz con puntajes de 0 a 5 en cada aspecto.</p>
+            <p>Basado en métricas de calidad de software (ISO 25010), evaluamos el quiz con puntajes de 0 a 5 en cada aspecto, cuantificando el rendimiento general.</p>
             <form id="evaluation-form">
                 <label for="funcionalidad">Funcionalidad (0-5):</label>
                 <input type="number" id="funcionalidad" min="0" max="5" value="4" required><br>
@@ -103,10 +116,10 @@
             </form>
             <div id="result"></div>
             <p>Resultados de evaluación del quiz: Puntaje total: 20 / 25. Puntaje promedio: 4 / 5.</p>
-        </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2023 Calidad de Software</p>
+        <p>&copy; 2023 Empresa XYZ - Especialistas en Calidad de Software</p>
     </footer>
     <script src="script.js"></script>
 </body>
