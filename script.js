@@ -156,19 +156,22 @@ document.getElementById('evaluation-form').addEventListener('submit', function(e
         timestamp: new Date().toISOString()
     };
 
-    // Usar localStorage para simular, pero para archivo real necesitaríamos backend
+    // Guardar en localStorage
     let evaluations = JSON.parse(localStorage.getItem('evaluations')) || [];
     evaluations.push(evaluationData);
     localStorage.setItem('evaluations', JSON.stringify(evaluations));
 
-    // Opcional: Descargar como archivo JSON
-    const dataStr = JSON.stringify(evaluationData, null, 2);
+    // Descargar archivo JSON con todas las evaluaciones
+    const dataStr = JSON.stringify(evaluations, null, 2);
     const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-    const exportFileDefaultName = 'evaluacion.json';
+    const exportFileDefaultName = 'evaluaciones_proyecto.json';
     const linkElement = document.createElement('a');
     linkElement.setAttribute('href', dataUri);
     linkElement.setAttribute('download', exportFileDefaultName);
     linkElement.click();
+
+    // Nota: En un sitio estático como GitHub Pages, no se puede escribir directamente en archivos del proyecto desde el navegador.
+    // Para guardar en el proyecto, descarga el archivo y súbelo manualmente al repo, o usa un backend.
 });
 
 function saveEvaluation(score, max) {
